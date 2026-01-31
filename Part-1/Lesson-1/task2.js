@@ -22,7 +22,7 @@ try {
   const constVariable = "this is a const variable";
   console.log(constVariable);
   eval(`
-    let object { constVariable : "this is a const variable redeclared indirectly" }
+    let object = { constVariable : "this is a const variable redeclared indirectly" }
     console.log(object.constVariable)
   `);
 
